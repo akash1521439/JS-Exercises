@@ -67,7 +67,14 @@ var cart = [
        price: 65.99,
        quantity: 2
    }];
-
+//5a
+function addItem(newItem){
+    cart.push(newItem);
+    console.log(cart);
+}
+   var newItem= {name:"Watch", price: 64, quantity: 2}
+   addItem(newItem);
+// Task 5d
 function totalbill(){
     var total=0;
    for (var i = 0 ;  i <cart.length; i++){
