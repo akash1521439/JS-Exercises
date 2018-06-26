@@ -74,6 +74,33 @@ function addItem(newItem){
 }
    var newItem= {name:"Watch", price: 64, quantity: 2}
    addItem(newItem);
+
+//5b
+
+function sortByKey(array, key) {
+    return array.sort(function(a, b) {
+        var x = a[key]; var y = b[key];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    });
+}
+
+ console.log(sortByKey(cart, 'quantity'));
+ 
+//5c
+
+function findByname(key){
+    var arr=[];
+    for(var i=0;i<cart.length;i++){
+        if(cart[i].name==key){
+            
+           arr.pushvalues=cart[i];
+          
+        }
+    }
+    console.log(arr);
+}
+findByname("Shoes");
+
 // Task 5d
 function totalbill(){
     var total=0;
